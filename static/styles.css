@@ -1,0 +1,402 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px; 
+  width: 80%;
+  background-color: #f0f0f0;
+  border-radius: 20px; 
+  margin: 20px auto; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+
+h1 {
+  font-size: 2rem;
+  color: #333; 
+  margin-bottom: 10px; 
+}
+}
+
+.layout:hover {
+  transform: translateY(-10px);
+}
+
+.button {
+  padding: 15px 30px;
+  background-color: #ff00ff; 
+  border: 2px solid #00ffff; 
+  border-radius: 50%; 
+  color: #00ff00; 
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.button:hover {
+  background-color: #00ffff; 
+  color: #ff00ff;
+  transform: translateY(-2px); 
+}
+
+.button:active {
+  transform: translateY(0); 
+  box-shadow: none; 
+}
+
+
+.layout2 {
+  font-family: 'Comic Sans MS', cursive;
+  color: magenta; 
+  text-shadow: 3px 3px 0px cyan;
+}
+.pokemon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 20px;
+}
+
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3949AB; 
+  border-radius: 20px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.pokemon-container:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.pokemon-container img {
+  width: 120px; 
+  border-radius: 50%; 
+  margin-bottom: 10px; 
+}
+
+.pokemon-container h2 {
+  font-family: 'Arial', sans-serif; 
+  color: #FFD600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pokemon-container audio {
+  width: 100%; 
+}
+.error {
+  color: #FF5722; 
+  font-size: 1.2rem; 
+  text-align: center;
+  font-family: 'Arial', sans-serif; 
+  margin-top: 10px; 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4CAF50; 
+  border-radius: 15px; 
+  padding: 30px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease-in-out;
+  width: 100%; 
+
+  h1 {
+    font-family: 'Arial', sans-serif; 
+    color: #FFD700; 
+    text-shadow: 2px 2px 4px #000080; 
+    text-align: center;
+    margin-bottom: 20px; 
+  }
+
+  input {
+    padding: 12px; 
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    border: 2px solid #000080; 
+    font-family: 'Arial', sans-serif; 
+    width: calc(100% - 24px); 
+    max-width: 300px; 
+    transition: border-color 0.3s ease; 
+  }
+
+  .input:focus {
+    outline: none;
+    border-color: #FF6347;
+  }
+  
+  .button {
+    padding: 12px 24px;
+    background-color: #FF6347;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 24px);
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .button:hover {
+    background-color: #FF4500;
+  }
+}
+  .pokemon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6347;
+    border-radius: 50%;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    width: 250px;
+  
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    img:hover {
+      transform: scale(1.1);
+    }
+  
+    h1 {
+      font-family: 'Arial', sans-serif;
+      color: #FFD700;
+      text-shadow: 2px 2px 4px #000080;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    button {
+      padding: 12px 24px;
+      background-color: #4682B4;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      max-width: 200px;
+      margin-top: 20px;
+    }
+  
+    button:hover {
+      background-color: #4169E1;
+    }
+  }
+  
+  .audio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .audio audio {
+    display: block;
+    width: 100%;
+  }
+  
+  .audio audio::-webkit-media-controls-play-button,
+  .audio audio::-webkit-media-controls-pause-button {
+    display: none;
+  }
+  
+  .audio audio::-webkit-media-controls-panel {
+    background-color: #1E90FF;
+    border-radius: 10px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .audio audio::-webkit-media-controls-current-time-display {
+    color: #FFFFFF;
+    font-size: 0.8rem;
+  }
+  
+  .audio audio::-webkit-media-controls-timeline {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 5px;
+    border-radius: 5px;
+  }
+  
+  .audio audio::-webkit-media-controls-timeline::-webkit-media-slider {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+  }
+  
+  .audio audio::-webkit-media-controls-volume-slider {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+  }
+  
+  .audio¡audio::-webkit-media-controls-volume-slider::-webkit-media-slider-thumb {
+    background-color: #1E90FF;
+    border-radius: 50%;
+  }
+  
+  .buscar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+  
+    h1 {
+      font-family: 'Arial', sans-serif;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    input {
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: none;
+      font-family: 'Arial', sans-serif;
+      width: 100%;
+      max-width: 300px;
+      box-sizing: border-box;
+    }
+  
+    button {
+      padding: 15px 30px;
+      background-color: #2196F3;
+      border: none;
+      border-radius: 10px;
+      color: #FFFFFF;
+      font-family: 'Arial', sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      max-width: 300px;
+      box-sizing: border-box;
+    }
+  
+    button:hover {
+      background-color: #0b7dda;
+    }
+  }
+  
+  .ventana {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .ventana-content {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+  
+  .ventana-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #555555;
+    transition: color 0.3s ease;
+  }
+  
+  .ventana-close:hover {
+    color: #000000;
+  }
+  
+  .ventana-eliminar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #28006e;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    margin: 20px auto;
+  
+    h2 {
+      font-family: 'Comic Sans MS', cursive;
+      color: #FF6F00;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+  
+    p {
+      font-family: 'Comic Sans MS', cursive;
+      color: #FFFF00;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+    }
+  
+    button {
+      padding: 15px 30px;
+      background-color: #03A9F4;
+      border: none;
+      border-radius: 30px;
+      color: #FFFFFF;
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+  
+    button:hover {
+      background-color: #0288D1;
+    }
+  }
+  
